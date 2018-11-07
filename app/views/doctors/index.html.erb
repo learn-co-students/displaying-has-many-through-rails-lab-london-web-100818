@@ -1,0 +1,11 @@
+<h1>All Doctors</h1>
+
+<ul>
+  <% @doctors.each do |d| %>
+    <li>
+      <%= d.name %> || 
+      <%= link_to "view", doctor_path %>
+    </li>
+  <% end %>
+</ul>
+
