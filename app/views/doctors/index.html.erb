@@ -4,8 +4,7 @@
   <% @doctors.each do |d| %>
     <li>
       <%= d.name %> || 
-      <%= link_to "view", doctor_path %>
+      <%= link_to "view", doctor_path(d) %>
     </li>
   <% end %>
 </ul>
-
